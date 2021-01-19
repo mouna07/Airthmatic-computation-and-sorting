@@ -6,3 +6,4 @@ read -p "enter the value of c:" c
 
 Result1=$((a+b*c))
 Result2=$((a*b+c))
+Result3=$((c+a/b))
