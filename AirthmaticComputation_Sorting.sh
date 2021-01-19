@@ -9,7 +9,6 @@ Result2=$((a*b+c))
 Result3=$((c+a/b))
 Result4=$((a%b+c))
 
-<<<<<<< HEAD
 for (( i=0;i<4;i++))
 do
 	read -p "key:" key
