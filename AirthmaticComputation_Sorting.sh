@@ -1,5 +1,5 @@
 #! /bin/bash -x
-
+declare -A dict
 read -p "enter the value of a:" a
 read -p "enter the value of b:" b
 read -p "enter the value of c:" c
@@ -14,8 +14,16 @@ do
 	read -p "key:" key
 	keys[i]=$key
 done
-for k in ${key[@]}
+for key in ${key[@]}
 do
 	read -p "value for $k:" value
-	dict[$k]=$value
+	dict[$key]=$value
 done
+echo ${!dict[@]}
+echo ${dict[@]}
+for value in  ${dict[@]}
+do
+	array[value]=${dict[value]}
+done
+echo ${array[@]}
+
